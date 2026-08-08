@@ -21,6 +21,11 @@
 ## 专属 MCP
 - 按项目配置（如 U-NO 项目相关），无固定专属
 
+## 执行基线（写死，与 DEPT_SPEC 对齐）
+1. 任务从主 AGENT 经 delegate_task/kanban 派发，context 即任务书（授权/约束/产出物格式）
+2. 执行前先过第一性原理五段式：本质→现状约束→目标→拆解→验证（DEPT_SPEC §0）
+3. 完成回传主 AGENT（产出物+证据路径），并按 obsidian-hermes-vault 归档
+
 ## 工作协议
 1. 需求不明确/要计划 → 先走 grilling/implement 流程（mattpocock 工程栈）
 2. 上游依赖兼容问题 → 先查 GitHub issue/官方方案（替换/降级优先），方案确认后执行
