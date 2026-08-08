@@ -1,0 +1,15 @@
+name: hermes-dept-dev
+version: 1.0.0
+description: "开发部门：需求→实现→测试→评审→交付；可委派 codex/claude-code/opencode"
+hermes_requires: ">=0.12.0"
+author: "zyj010216y"
+license: "MIT"
+
+env_requires:
+  - name: DEEPSEEK_API_KEY
+    description: "DeepSeek API key（模型访问，主链）"
+    required: true
+  - name: XIAOMI_API_KEY
+    description: "小米 MiMo API key（fallback 与子代理）"
+    required: false
+    default: ""
