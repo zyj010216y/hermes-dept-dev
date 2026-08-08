@@ -48,3 +48,7 @@ checkpoints/
 sandboxes/
 backups/
 models_dev_cache.json
+
+# Runtime locks (v5 审计修复: 运行时文件混入发行版)
+.mcp-discovery.lock
+cron/.jobs.lock
